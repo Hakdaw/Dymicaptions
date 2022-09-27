@@ -1,0 +1,74 @@
+<!-- COPYRIGHT © 2022 Hakdaw. All Rights Reserved. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Control Bar</title>
+        <link id="display_css" rel="stylesheet" href="res/css/dark.css" />
+        <script src="res/js/app.js"></script>
+        <script src="res/js/thirdparty/FileSaver.min.js"></script>
+        <script src="res/js/dynamiccaptions.js"></script>
+        <script src="res/js/api.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="main_container">
+                <div id="cb_title" class="content-box" style="display: flex;">
+                    <div id="title" class="title"></div>
+                </div>
+                <script>
+                    document.getElementById('title').innerHTML = _app_name + '&emsp;<a class="title_caption">' + _app_version + '</a>';
+                </script>
+
+                <div style="height: 8px;"></div>
+
+                <div id="cb_setting" class="content-box">
+                    <div class="subtitle_bar">
+                        <div class="icon-setting"></div>
+                        <div class="subtitle" style="padding-left: 8px;">设置</div>
+                    </div>
+                    <div>
+                        <div class="content-bar">
+                            <div class="content-bar-key">
+                                显示模式
+                            </div>
+                            <div class="content-bar-value">
+                                <select id="display_mode" class="default-select" onchange="changeDisplayMode(this.value, document.getElementById('display_css')); " onmouseenter="buttonStyle(this, 'focus');" onmouseleave="buttonStyle(this, 'default');">
+                                    <option value="dark">黑暗</option>
+                                    <option value="light">明亮</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="height: 8px;"></div>
+
+                <div id="cb_console_title" class="content-box">
+                    <div class="subtitle_bar">
+                        <div class="icon">&#9672;</div>
+                        <div class="subtitle" style="padding-left: 8px;">控制台</div>
+                    </div>
+                </div>
+
+                <div style="height: 8px;"></div>
+
+                <div id="cb_console" class="content-box" style="display: flex;">
+                    <input id="btn_rem-caption" type="button" class="disabled-button" value="&#10148; 当前字幕退场" onclick="pushRemCaption();" onmouseenter="buttonStyle(this, 'focus');" onmouseleave="buttonStyle(this, 'default');" disabled />
+                    <div style="width: 8px;"></div>
+                    <input id="btn_add-caption" type="button" class="default-button" value="&#10010; 添加字幕" onclick="addDefaultCaption();" onmouseenter="buttonStyle(this, 'focus');" onmouseleave="buttonStyle(this, 'default');" />
+                    <div style="width: 8px;"></div>
+                    <input id="btn_load-caption" type="button" class="default-button" value="&#9650; 加载字幕" onmouseenter="buttonStyle(this, 'focus');" onmouseleave="buttonStyle(this, 'default');" />
+                    <div style="width: 8px;"></div>
+                    <input id="btn_save-caption" type="button" class="default-button" value="&#9660; 保存字幕" onclick="saveCaptions();" onmouseenter="buttonStyle(this, 'focus');" onmouseleave="buttonStyle(this, 'default');" />
+                </div>
+
+            </div>
+        </div>
+
+    <script src="res/js/control_bar.js"></script>
+    <script>
+        changeDisplayMode(document.getElementById('display_mode').value, document.getElementById('display_css'));
+    </script>
+    </body>
+</html>

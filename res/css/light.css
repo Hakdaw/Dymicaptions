@@ -1,0 +1,167 @@
+body {
+    margin:0;
+    padding:0;
+    background: #FAFAFA;
+}
+
+.content-box {
+    background: #EAEAEA;
+    padding: 8px;
+    border-radius: 8px;
+    min-height: 0;
+    flex-wrap: wrap;
+
+}
+
+.caption-content-box {
+    background: #EAEAEA;
+    padding: 8px;
+    border-radius: 8px;
+    min-height: 0;
+    flex-wrap: wrap;
+
+}
+
+.icon {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #2424E0;
+    height: 16px;
+    width: 16px;
+}
+
+.icon-setting {
+    height: 16px;
+    width: 16px;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M489 316l-43-25c4-23 4-47 0-71l43-25c5-3 7-9 6-14 -11-36-30-68-55-95 -4-4-10-5-15-2l-43 25c-18-16-39-28-61-35V24c0-6-4-11-9-12 -37-8-75-8-110 0 -6 1-9 6-9 12v50c-22 8-43 20-61 35L87 84c-5-3-11-2-15 2 -25 27-44 59-55 95 -2 5 1 11 6 14l43 25c-4 23-4 47 0 71l-43 25c-5 3-7 9-6 14 11 36 30 68 55 95 4 4 10 5 15 2l43-25c18 16 39 28 61 35v50c0 6 4 11 9 12 37 8 75 8 110 0 6-1 9-6 9-12v-50c22-8 43-20 61-35l43 25c5 3 11 2 15-2 25-27 44-59 55-95C496 325 494 319 489 316zM256 337c-44 0-81-36-81-81 0-44 36-81 81-81 44 0 81 36 81 81C337 300 300 337 256 337z'/%3E%3C/svg%3E");
+    background: #2424E0;
+}
+
+.title {
+    color: #242424;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #323232;
+    font-weight: bold;
+}
+
+.subtitle_bar {
+    display: flex;
+    align-items: center;
+}
+
+.title_caption {
+    color: #646464;
+    font-weight: normal;
+}
+
+.content-bar {
+    display: flex;
+    padding: 8px;
+    color: #323232;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.content-bar-key {
+    display: grid;
+    min-width: 80px;
+    justify-items: right;
+    padding-right: 8px;
+}
+
+.content-bar-value {
+    display: grid;
+    min-width: 120px;
+    justify-items: left;
+    padding-left: 8px;
+}
+
+.default-select {
+    min-width: 120px;
+    min-height: 24px;
+    background: #FAFAFA;
+    border: 0;
+    border-radius: 4px;
+    color: #323232;
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+.default-button {
+    min-width: 128px;
+    min-height: 28px;
+    background: #FAFAFA;
+    border: 0;
+    border-radius: 4px;
+    color: #323232;
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+.primary-button {
+    min-width: 128px;
+    min-height: 28px;
+    background: #2424E0;
+    border: 0;
+    border-radius: 4px;
+    color: #E0E0E0;
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+.import-button {
+    min-width: 128px;
+    min-height: 28px;
+    background: #E01616;
+    border: 0;
+    border-radius: 4px;
+    color: #E0E0E0;
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+.disabled-button {
+    min-width: 128px;
+    min-height: 28px;
+    background: #E0E0E0;
+    border: 0;
+    border-radius: 4px;
+    color: #323232;
+    transition: all 100ms;
+    cursor: not-allowed;
+}
+
+.default-input {
+    width: 220px;
+    height: 24px;
+    background: #FAFFA;
+    border: 0;
+    border-radius: 4px;
+    color: #323232;
+    transition: all 100ms;
+}
+
+.default-checkbox {
+    width: 20px;
+    height: 24px;
+    background: #FAFAFA;
+    border: 0;
+    border-radius: 4px;
+    color: #323223;
+    cursor: pointer;
+}
+
+#main {
+    width: 100%;
+}
+
+#main_container {
+    padding: 8px;
+}
